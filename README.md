@@ -1,5 +1,12 @@
 # env-jenkins
 
+Create RSA key
+
+Create Docker image on Dockerhub :
+> * docker build -t jenkins .
+> * docker tag jenkins repository/jenkins:latest
+>  * docker push repository/jenkins:latest
+
 password :
 >docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
