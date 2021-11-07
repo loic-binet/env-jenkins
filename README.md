@@ -1,6 +1,7 @@
 # env-jenkins
 
-Create RSA key
+* Create SSH key pair (public/private)
+* Add id_rsa and id_rsa.pub in the same path to Dockerfile
 
 Create Docker image on Dockerhub :
 > * docker build -t jenkins .
