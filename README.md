@@ -17,6 +17,7 @@ Create Docker image on Dockerhub :
 * exec command :
 > docker-compose up -d
 
+* For access to Jenkins interface run http://IP:8080 on your Web browser
 * view jenkins default password :
 >docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
