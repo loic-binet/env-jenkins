@@ -4,6 +4,8 @@
 * Add id_rsa and id_rsa.pub in the same path to Dockerfile
 
 Create Docker image on Dockerhub :
+In docker command and docker-compose.yml replace repository by your Dockerhub repository 
+
 > * docker build -t jenkins .
 > * docker tag jenkins repository/jenkins:latest
 >  * docker push repository/jenkins:latest
