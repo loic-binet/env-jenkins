@@ -6,8 +6,9 @@ RUN echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu bionic main" | tee
 RUN apt -y install gnupg2
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
 
-COPY ./id_rsa ~/.ssh/id_rsa
-COPY ./id_rsa.pub ~/.ssh/id_rsa.pub
+RUN mkdir /root/.ssh
+COPY ./id_rsa /root/.ssh/id_rsa
+COPY ./id_rsa.pub /root/.ssh/id_rsa.pub
 
 # Install Ansible
 RUN apt-get update && apt-get install -y ansible
