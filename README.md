@@ -8,7 +8,13 @@ Create Docker image on Dockerhub :
 > * docker tag jenkins repository/jenkins:latest
 >  * docker push repository/jenkins:latest
 
-password :
+## Docker-compose
+
+* import docker-compose.yml file
+* exec command :
+> docker-compose up -d
+
+view jenkins default password :
 >docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 ## azure cli :
