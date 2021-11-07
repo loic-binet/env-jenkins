@@ -5,11 +5,11 @@ password :
 
 ## azure cli :
 
-Connect to jenkins container
+Connect to jenkins container :
 > docker exec -it jenkins bash 
 
-Install Azure cli
+Install Azure cli :
 > curl -sL https://aka.ms/InstallAzureCLIDeb | bash 
 
-Connect to Azure account
+Connect to Azure account :
 > az login 
