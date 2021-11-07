@@ -9,6 +9,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
 RUN mkdir /root/.ssh
 COPY ./id_rsa /root/.ssh/id_rsa
 COPY ./id_rsa.pub /root/.ssh/id_rsa.pub
+RUN chmod 755 /root/.ssh/id_rsa
 
 # Install Ansible
 RUN apt-get update && apt-get install -y ansible
