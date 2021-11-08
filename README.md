@@ -21,7 +21,7 @@ Create Docker image on Dockerhub :
 * view jenkins default password :
 >docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
-## azure cli :
+## azure cloud :
 
 Connect to jenkins container :
 > docker exec -it jenkins bash 
